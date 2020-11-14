@@ -227,11 +227,11 @@ class MainFrame(Frame):
         #Ask for a directory
         self.folder = filedialog.askdirectory()
 
-        #Increase the times the user pressed he button
+        #Increase the times the user pressed the button
         self.times_asked_folder += 1
 
         #Delete previous content if any exists
-        if self.times_asked_folder > 1:
+        if self.times_asked_folder > 0:
             self.enter_location.delete(0,END)
 
         #Add folder path to entry widget when selected
